@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <title>New tab - Hony</title>
+  <script type="text/javascript" src="angular.min.js"></script>
+   <script type="text/javascript" src="hony.js"></script>
+  <style>
+    .imagedropshadow { padding: 5px; border: solid 1px #EFEFEF; }
+    a:hover img.imagedropshadow { border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; }
+  </style>
+</head>
+ <body ng-app="hony" ng-controller="getSrc">
+   <p class="pdisplay" style="text-align: center; font-size: 170%; color: #333333; font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;">{{ptitle}}</p>
+   <div class="container" style="text-align:center">     
+      <a href={{plink}} target="_blank" >  
+         <img class="imagedropshadow" src={{psrc}} onError="if (this.src != 'nyc.jpg') this.src = 'nyc.jpg';"/> 
+     </a>
+      
+   </div>
+  <br/>
+  <br/>
+  <footer style="color: #333333; font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;">
+     <p style="text-align:right">All images belong to <a href="http://www.humansofnewyork.com/">Humans of New York</a>.Please don't sue me. - Sharon Ravindran</p>
+   </footer></body>
+</html>
